@@ -81,8 +81,10 @@ body {
 	width: 150px;
 	height: 100vh;
 	/* height: calc(100vh - 80px); */
+	position: absolute;
 	display: none;
 	background-color: whitesmoke;
+	z-index: 1;
 }
 
 .nav-menu__panel ul {
@@ -92,6 +94,11 @@ body {
 .nav-menu__panel ul li {
 	padding: 10px;
 }
+
+.nav-menu__panel ul li a {
+	color: black;
+}
+
 .nav-menu__panel ul li:hover {
 	cursor: pointer;
 }
@@ -114,10 +121,12 @@ body {
 }
 
 .main-h1 {
+	margin: 0 auto;
 	font-size: 100px;
 	text-align: center;
 	color: #b4b1b1;
 	letter-spacing: 1px;
+	width: 50%;
 }
 .main-h1 > span {
 	animation: glow 3s ease-in-out infinite;
@@ -140,19 +149,40 @@ body {
 }
 
 .h1 {
-	border: solid orange 2px;
-	column-width: 200px;
+	margin-top: 7%;
 }
+
 .h1 h2 {
 	color: whitesmoke;
 	font-size: 0.9em;
-	border: solid green 2px;
 	margin: auto 0;
+	padding: 5px;
+	text-align: center;
+}
+
+.h1 h2 span {
+	font-style: italic;
+	font-size: 1.5em;
 }
 
 .h1 h2 a {
 	color: whitesmoke;
 	text-decoration: none;
+}
+
+.icons {
+	margin-top: 15%;
+	display: flex;
+	flex-direction: row;
+}
+.icons ul {
+	margin: 0 auto;
+}
+
+.icons img {
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
